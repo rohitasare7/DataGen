@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+<title>Random Data Generator</title>
+<meta name="title" content="Random Data Generator">
+<meta name="description" content="RDG helps you to create dummy data for your testing scenarios. It's simple, safe and fastest way to generate dummy user data.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rohitasare7.github.io/faker.js/test-data.html">
+<meta property="og:title" content="Random Data Generator">
+<meta property="og:description" content="RDG helps you to create dummy data for your testing scenarios. It's simple, safe and fastest way to generate dummy user data.">
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://rohitasare7.github.io/faker.js/test-data.html">
+<meta property="twitter:title" content="Random Data Generator">
+<meta property="twitter:description" content="RDG helps you to create dummy data for your testing scenarios. It's simple, safe and fastest way to generate dummy user data.">
+<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+   <!-- Primary Meta Tags End -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"  />
+    <link rel="stylesheet" href="https://rohitasare7.github.io/faker.js/styleMain.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">  
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+
+</head>
+<body>
+
+  <div class="container"> <!-- header start-->  
+    <section class="header">
+              <h2 class="title">Random Data Generator</h2>   
+      <p>Unlimited data for your testing scenarios.</p>
+              <div class="value-props row">
+                <div class="four columns value-prop">
+                  <img class="value-img" src="https://rohitasare7.github.io/faker.js/img/click.png">
+                  1) Click Generate Button.
+                </div>
+                <div class="four columns value-prop">
+                  <img class="value-img" src="https://rohitasare7.github.io/faker.js/img/copy.png">
+                  2) Click on Copy button.
+                </div>
+                <div class="four columns value-prop">
+                  <img class="value-img" src="https://rohitasare7.github.io/faker.js/img/done.png">
+                  3) Done, your data is copied.
+                </div>
+              </div>
+            </section>
+       </div> <!-- header end--> 
+    
+    <div class="row" id="topSection">
+      <div class="button_wrapper">
+      <button class="generateButton">Generate</button>
+      </div>
+      </div> 
+    
+      <div class="container"> <!-- main form container starts --> 
+        <div class="section_title">
+        <h3>Personal Details</h3>
+        </div>
+        <div class="row box_card">
+        <div class="ten columns">
+           <div class="data_field_new">
+           <label>Email</label>  
+             <input type="text" id="email"> <button id="btnCopy" data-clipboard-target="#email" data-tippy-content="Email Address Copied!">Copy</button>
+           </div> 
+          
+          <div class="data_field_new">
+          <label for="phoneNumber">Mobile Number</label>
+          <input type="text" id="phoneNumber"> <button id="btnCopy" data-clipboard-target="#phoneNumber" data-tippy-content="Mobile Number Copied!">Copy</button>
+          </div>
+          </div> <!-- column end -->
+          
+          
+          <div class="twelve columns margin-left-zero">
+          <div class="data_field">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName"><button id="btnCopy" data-clipboard-target="#firstName" data-tippy-content="First Name Copied!">Copy</button>
+          </div>
+           
+          <div class="data_field">
+          <label for="middleName">Middle Name</label>
+          <input type="text" id="middleName"><button id="btnCopy" data-clipboard-target="#middleName" data-tippy-content="Middle Name Copied!">Copy</button>
+          </div>
+          
+          <div class="data_field">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName"><button id="btnCopy" data-clipboard-target="#lastName" data-tippy-content="Last Name Copied!">Copy</button>
+          </div>
+          </div> <!-- column end -->   
+          </div> <!-- row end -->
+      
+        <div class="section_title">
+          <h3>Address Details</h3>
+          </div>
+      <div class="row box_card">
+      <div class="twelve columns">  
+        <div class="date_field_address">
+        <label for="secondaryAddress">House No.</label>
+            <input type="text" id="secondaryAddress"><button id="btnCopy" data-clipboard-target="#secondaryAddress" data-tippy-content="House Number Copied!">Copy</button>
+          </div>
+          <div class="date_field_address">
+         <label for="streetName">Street Name</label>
+            <input type="text" id="streetName"><button id="btnCopy" data-clipboard-target="#streetName" data-tippy-content="Street Name Copied!">Copy</button>
+            </div>
+            <div class="date_field_address">
+        <label for="addressLine">Address Line</label>
+            <input type="text" id="addressLine"><button id="btnCopy" data-clipboard-target="#addressLine" data-tippy-content="Address Line Copied!">Copy</button>
+              </div>
+              <div class="date_field_address">
+        <label for="landmark">Landmark</label>
+            <input type="text" id="landmark"><button id="btnCopy" data-clipboard-target="#landmark" data-tippy-content="Landmark Copied!">Copy</button>
+        </div>
+       </div>
+       </div> <!-- address end -->
+       <!-- first section end -->
+      
+         <!-- box_card start -->
+        <div class="section_title">
+          <h3>Identity Proof Details</h3>
+          </div>
+      <div class="row box_card">  
+      <div class="twelve columns">
+       <div class="date_field_work">
+     <label>Pan Card</label>  
+     <input type="text" id="panCard"><button id="btnCopy" data-clipboard-target="#panCard" data-tippy-content="Pan Card Copied!">Copy</button>
+       </div>
+       <div class="date_field_work">
+       <label>Voter ID</label>  
+     <input type="text" id="voterid"><button id="btnCopy" data-clipboard-target="#voterid" data-tippy-content="Voter ID Copied!">Copy</button>
+        </div>
+        
+         <div class="date_field_work">
+      <label>Passport</label>  
+     <input type="text" id="passport"><button id="btnCopy" data-clipboard-target="#passport" data-tippy-content="Passport Copied!">Copy</button>
+        </div>
+        
+         <div class="date_field_work">
+      <label>Aadhar</label>  
+     <input type="text" id="aadhar"><button id="btnCopy" data-clipboard-target="#aadhar" data-tippy-content="Aadhar Copied!">Copy</button>
+        </div>
+        
+         <div class="date_field_work">
+       <label>Driving Licence</label>  
+     <input type="text" id="drlicence"><button id="btnCopy" data-clipboard-target="#drlicence" data-tippy-content="Driving Licence Copied!">Copy</button>
+        </div>
+        
+      </div>
+      </div> <!-- box_card end -->
+      
+      <!-- box_card start -->
+        <div class="section_title">
+          <h3>Work Details</h3>
+          </div>
+      <div class="row box_card">  
+      <div class="twelve columns">
+       <div class="date_field_work">
+      <label for="company">Company</label>
+      <input type="text" id="company"><button id="btnCopy" data-clipboard-target="#company" data-tippy-content="Company Copied!">Copy</button>
+       </div> 
+       <div class="date_field_work">
+       <label for="workEmail">Work Email</label>  
+       <input type="email" id="workEmail"><button id="btnCopy" data-clipboard-target="#workEmail" data-tippy-content="Work Email Copied!">Copy</button>
+        </div>
+      </div>
+      </div> <!-- box_card end -->
+        <div class="center-div">
+        <a href="#topSection" class="button_m_blue">Back to Top</a>
+        </div>
+      </div> <!-- container end -->
+    <!-- footer starts -->
+    <div class="footer row">
+      <p>Version 1.0.1 ~ Release Date : 11-07-2021 </p>
+      <p>Libraries used - <a href="https://github.com/marak/Faker.js">faker.js</a> | <a href="https://clipboardjs.com">clipboard.js</a> | <a href="https://atomiks.github.io/tippyjs">tippy.js</a> | <a href="https://fent.github.io/randexp.js">randexp.js</a> | <a href="http://getskeleton.com">skeleton.css</a> </p> 
+    </div>
+    <!-- footer end -->
+    
+    <!-- HTML end -->
+        
+            <script type="text/javascript" src="https://github.com/fent/randexp.js/releases/download/v0.4.0/randexp.min.js"></script>        
+            <script src="https://rohitasare7.github.io/faker.js/dist/faker.js"></script> 
+            <script src="https://rohitasare7.github.io/faker.js/app.js"></script> 
+            
+          
+
+</body>
+</html>
