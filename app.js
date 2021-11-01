@@ -50,10 +50,12 @@ btnGen.addEventListener('click', () => {
    
   // Identity Section
   //regex starts
-    var panRegex = new RandExp(/[A-Z]{5}[0-9]{4}[A-Z]{1}/).gen();
+    //var panRegex = new RandExp(/[A-Z]{5}[0-9]{4}[A-Z]{1}/).gen();
+    var panRegex = new RandExp(/^$|^([a-zA-Z]){3}[hHpP]([a-zA-Z]){1}([0-9]){4}([a-zA-Z]){1}?$/).gen();
     var voterRegex = new RandExp(/[A-Z]{3}[0-9]{6}/).gen();
     var passportRegex = new RandExp(/^[A-Z][0-9]{7}$/).gen();
-    var aadharRegex = new RandExp(/^[0-9]{4}[ ][0-9]{4}[ ][0-9]{4}$/).gen();
+   // var aadharRegex = new RandExp(/^[0-9]{4}[ ][0-9]{4}[ ][0-9]{4}$/).gen();
+    var aadharRegex = new RandExp(/^(?:\d{12}|null|)$/).gen();
    // var drlicenceRegex = new RandExp(/^[A-Z]{2}[-][1-9]{13}$/).gen();
    // Driving License State Year 000 RNG
     var licenseState = new RandExp(/^[A-Z]{2}$/).gen();
